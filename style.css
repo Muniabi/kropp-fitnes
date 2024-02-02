@@ -176,6 +176,42 @@ body {
     overflow: hidden !important;
 }
 
+.title-medium {
+    font-size: 40xp;
+    line-height: 1.3;
+    color: var(--color-light);
+}
+
+.backdrop-title {
+    position: relative;
+    z-index: 2;
+}
+
+.backdrop-title::before {
+    content: "";
+    position: absolute;
+    right: calc(100% + 8px);
+    display: block;
+    width: 26px;
+    aspect-ratio: 1;
+    background: url(icons/plus.svg) center/contain no-repeat;
+}
+
+.backdrop-title::after {
+    content: attr(data-title);
+    position: absolute;
+    z-index: -1;
+    top: 0em;
+    left: 0em;
+    color: transparent;
+    font-size: 2.8e;
+    font-family: var(--font-family-accent);
+    --webkit-text-stroke: 1px var(--color-light-gray);
+    -webkit-text-stroke-color: 1px var(--color-light-gray);
+    text-stroke: 1px var(--color-light-gray);
+}
+
+
 h1,
 h2,
 h3,
@@ -328,6 +364,31 @@ h6 {
 .banner-pagination-button:not(.is-curent):hover::after {
     border-color: var(--color-light-gray);
 }
+
+.motivation-item:nth-child(even) {
+    background-color: var(--сolor-darck-alternate);
+}
+
+.motivation-item:nth-child(even) .motivation-card {
+    flex-direction: row-reverse;
+}
+
+.motivation-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: clamp(30px, 10.42vw, 200px);
+}
+
+.motivation-card-img {
+    margin-block: -60px;
+}
+
+.motivation-card-body {
+    padding-left: 35px;
+}
+
+
 
 
 
