@@ -206,10 +206,10 @@ body {
     color: transparent;
     font-size: 2.8em;
     font-family: var(--font-family-accent);
-    --webkit-text-stroke: 1px var(--color-light-gray);
-    stroke: 1px var(--color-light-gray);
-    text-stroke: 1px var(--color-light-gray);
-    stop-color: var(--color-light-gray);
+    --webkit-text-stroke: 1px ;
+    --webkit-text-stroke-color: var(--color-light-gray);
+    stroke: 1px;
+    stroke-color: var(--color-light-gray);
 }
 
 
