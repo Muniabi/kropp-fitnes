@@ -617,6 +617,18 @@ h6 {
     column-gap: 20px;
 }
 
+.footer-extra {
+    padding-block: 15px;
+    background-color: var(--сolor-darck-alternate);
+}
+
+.footer-copyright {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
@@ -681,6 +693,10 @@ h6 {
 
     .join-us-title:not(:last-child) {
         margin-bottom: 80px;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
     }
 }
 
@@ -753,5 +769,9 @@ h6 {
         flex-direction: column;
         align-items: center;
         row-gap: 20px;
+    }
+
+    .footer-copyright {
+        font-size: 12px;
     }
 }
