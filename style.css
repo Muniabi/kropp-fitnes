@@ -300,6 +300,7 @@ h6 {
     column-gap: 20px;
     min-height: var(--header-height);
     padding-inline: 32px;
+    padding-top: 10px;
     background-color: var(--сolor-darck-alternate);
 }
 
